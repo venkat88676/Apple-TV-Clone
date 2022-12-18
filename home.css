@@ -1,0 +1,244 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+#logo {
+    width: 70px;
+
+}
+
+.search {
+    display: flex;
+    /* width: 40%; */
+    justify-content: flex-end;
+    padding: 20px;
+}
+.signBtn{
+    margin-right: 10px;
+    
+}
+.signBtn button{
+    
+    font-size: large;
+}
+.register button{
+    /* margin: 10px; */
+    font-size: large;
+}
+.signIn{ 
+    position: absolute;  
+    width: 50%;
+    height:50%; 
+    z-index: 1;
+    /* display: none; */
+    
+}
+.login{
+    position: absolute;  
+    width: 50%;
+    height:50%; 
+    z-index: 1;
+    display: block;
+      
+}
+
+.signIn .container{    
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+   text-align: center;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding-top: 40px;
+    border-radius:20px;
+    display: none;
+}
+.login .container{    
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+   text-align: center;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding-top: 40px;
+    border-radius:20px;
+    display: block;
+}
+.register{ 
+    position: absolute;  
+    width: 50%;
+    height:50%; 
+    z-index: 1;
+    /* display: none; */
+    
+}
+.registerA{
+    position: absolute;  
+    width: 50%;
+    height:50%; 
+    z-index: 1;
+    display: block;
+      
+}
+
+.register .container-reg{    
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+   text-align: center;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding-top: 40px;
+    border-radius:20px;
+    display: none;
+}
+.registerA .container-reg{    
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+   text-align: center;
+    margin-left: 50%;
+    margin-top: 20%;
+    padding-top: 40px;
+    border-radius:20px;
+    display: block;
+}
+.appleid{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: large;
+    
+}
+.new{
+    display: block;
+    margin-top: 80px;
+    font-size: large
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+
+}
+
+footer img {
+    border: solid rgb(58, 54, 54);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Hide the images by default */
+.active {
+    display: block !important;
+    background-color: black !important;
+}
+
+.slideshow-container {
+    display: none;
+    background-color: black;
+}
+
+
+.mySlides video {
+
+    /* border: solid red; */
+    width: 100%;
+    margin-top: -25px;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    /* transition:  5s ease-in-out; */
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -20px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(240, 248, 255, 0.222);
+
+    user-select: none;
+}
+
+.text {
+    position: absolute;
+    bottom: 5%;
+    padding-left: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text button {
+    font-size: 25px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: none;
+    /* color: white; */
+
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* body  column       */
+.column {
+    display: flex;
+    width: 100%;
+}
+
+.column img {
+    width: 370px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    
+}
+
+.column div:hover {
+    transform: scale(1.13);
+
+}
+
+.column div {
+    transition: all 0.3s linear;
+    /* border: solid red; */
+    margin: 10px
+}
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+
+
+}

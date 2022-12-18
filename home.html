@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple TV</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+
+    <nav>
+        <!-- library icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- navigation -->
+        <div>
+            <a href="/home.html"><img id="logo"
+                    src="https://i.pinimg.com/originals/60/9d/6e/609d6e4cfcd621217381b933dffb55a7.jpg" alt=""><a>
+        </div>
+        <div class="search">
+            <form>
+                <a href="/search.html"><input type="text" placeholder="Search.." name="search"></a>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a class="signBtn"><button>Sign In</button></a>
+            <a class="registerBtn"><button>Register</button></a>
+        </div>
+    </nav>
+
+    <!-- signin page -->
+    <div class="signIn">
+        <div class="container ">
+            <img style="width: 100px; border-radius: 10px;"
+                src="https://i.pinimg.com/originals/60/9d/6e/609d6e4cfcd621217381b933dffb55a7.jpg" alt="">
+            <h1>Sign in with your Apple ID</h1>
+            <h3>you will be signed in to Apple TV and Apple Music</h3>
+            <input class="appleid" type="text" placeholder="Apple ID...">
+            <br>
+            <a class="new" href="/newid.html">Create New Apple Id</a>
+        </div>
+
+    </div>
+
+    <!-- register -->
+    <div class="register">
+        <div class="container-reg">
+            <h2>Create Apple ID</h2>
+            <form class="form">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="date" placeholder="Birthday">
+                <input type="email" placeholder="name@example.com">
+                <p>Your email will be your Apple ID.</p>
+                <input type="checkbox">
+                <h3>Agree to Term & Conditions</h3>
+                <button>Continue</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- landing page -->
+    <div class="slideshow-container active">
+        <div class="mySlides">
+            <div class="container">
+                <video pause muted loop>
+                    <source src="/videos/Emancipation —.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h2>EMANCIPATION</h2>
+                    <p>Will Smith Starts in a flim inspired by </p>
+                    <p>a gripping true story.Watch now.</p>
+                    <button><a href="/movie1.html">Go to Movie</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container ">
+        <div class="mySlides">
+            <div class="container">
+                <video pause muted loop>
+                    <source src="/videos/Echo 3 — Official.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h2>ECHO -3</h2>
+                    <button class="btn"><a href="/movie2.html">Go to Movie</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="container">
+                <video pause muted loop>
+                    <source src="/videos/Slow Horses — Official Trailer _ Apple TV.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h2>Slow Horses</h2>
+                    <button class="btn"><a href="/movie3.html">Go to Show</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="container">
+                <video pause muted loop>
+                    <source src="videos/Invasion — Official Trailer _ Apple TV.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h2>Invasion</h2>
+                    <button class="btn"><a href="/movie4.html">Go to Show</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="container">
+                <video pause muted loop>
+                    <source src="videos/Mythic Quest — Season 3 Official Trailer _ Apple TV.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <h2>Mystic Quest</h2>
+                    <button class="btn"><a href="/movie5.html">Go to Show</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <div>
+        <a class="next" onclick="next()">&#10095</a>
+        <a class="prev" onclick="prev()">&#10094</a>
+        
+    </div> 
+
+
+    <!-- columns -->
+    <div class="container">
+        <h2>Watch Premieres for Free</h2>
+        <div class="column">
+            <div><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+            <div><img src="https://is5-ssl.mzstatic.com/image/thumb/7SeRlnCzKlgeqrg6-ixkig/738x416.webp" alt=""></div>
+            <div><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/738x416.webp" alt=""></div>
+            <div><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/738x416.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Most Popular</h2>
+        <div class="column">
+            <div><img src="https://is5-ssl.mzstatic.com/image/thumb/lgskq6n1xkUI5DOyA5tWWQ/738x416.webp" alt=""></div>
+            <div><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/738x416.webp" alt=""></div>
+            <div><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/738x416.webp" alt=""></div>
+            <div><img src="https://is4-ssl.mzstatic.com/image/thumb/C7vq4me467uKBCWL8QZA6g/738x416.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Watch Entire Seasons</h2>
+        <div class="column">
+            <div> <img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" alt=""></div>
+            <div><img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt=""></div>
+            <div> <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt=""></div>
+            <div> <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Latest Originals</h2>
+        <div class="column">
+            <div><img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" alt=""></div>
+            <div> <img src="https://is5-ssl.mzstatic.com/image/thumb/BG3rKYXaPe9KkpZOZUjj_w/1478x832.webp" alt=""></div>
+            <div><img src="https://is3-ssl.mzstatic.com/image/thumb/xEt4MZZlgE0IeQMnUSG65Q/1478x832.webp" alt=""></div>
+            <div> <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt=""></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Cuddly Critters</h2>
+        <div class="column">
+            <div><img src="https://is4-ssl.mzstatic.com/image/thumb/ba3Q2gHzrcpC69JvKRy_bg/738x416.webp" alt=""></div>
+            <div><img src="https://is1-ssl.mzstatic.com/image/thumb/r85VE266WcKhz9SdLwhb0A/738x416.webp" alt=""></div>
+            <div> <img src="https://is1-ssl.mzstatic.com/image/thumb/ztml996EQMN-hkl3rjIlsw/738x416.webp" alt=""></div>
+            <div> <img src="https://is2-ssl.mzstatic.com/image/thumb/_dJgnWG8W30_qMRZYCEx-Q/738x416.webp" alt=""></div>
+        </div>
+    </div>
+
+    <!-- footers -->
+    <footer>
+        <img id="logo" src="https://i.pinimg.com/originals/60/9d/6e/609d6e4cfcd621217381b933dffb55a7.jpg" alt="">
+        <h1>Watch Apple TV+ here or anywhere.</h1>
+        <p>Find Apple TV+ on the Apple app, available on</p>
+        <p>Apple device, smart TVs, and more.</p>
+        <p>See all supported devices</p>
+        <p>Copyright 2022 Apple Inc. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    let slides = document.querySelectorAll('.slideshow-container');
+    let index = 0;
+
+    function next() {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+        console.log(index)
+    }
+    function prev() {
+
+        slides[index].classList.remove('active');
+        index = (index - 1 + slides.length) % slides.length;
+        slides[index].classList.add('active');
+        console.log(index)
+    }
+
+    let btn = document.querySelector('.signBtn');
+    let signIn = document.querySelector('.signIn')
+    btn.addEventListener("click", () => {
+
+        signIn.classList.add("login");
+    });
+
+    let btn1 = document.querySelector('.registerBtn');
+    let reg = document.querySelector('.register');
+    btn1.addEventListener('click', () => {
+        reg.classList.add("registerA")
+    })
+</script>
