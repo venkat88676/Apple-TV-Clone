@@ -156,7 +156,7 @@ footer img {
 .mySlides video {
 
     /* border: solid red; */
-    width: 100%;
+    max-width: 100%;
     margin-top: -25px;
 
 }
@@ -214,11 +214,11 @@ footer img {
 /* body  column       */
 .column {
     display: flex;
-    width: 100%;
+    
 }
 
 .column img {
-    width: 370px;
+    width: 275px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: auto;
@@ -239,6 +239,5 @@ footer img {
 .container {
     padding-left: 25px;
     padding-right: 25px;
-
-
+    
 }

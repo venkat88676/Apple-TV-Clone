@@ -17,7 +17,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- navigation -->
         <div>
-            <a href="/home.html"><img id="logo"
+            <a href="/index.html"><img id="logo"
                     src="https://i.pinimg.com/originals/60/9d/6e/609d6e4cfcd621217381b933dffb55a7.jpg" alt=""><a>
         </div>
         <div class="search">
@@ -65,7 +65,7 @@
     <div class="slideshow-container active">
         <div class="mySlides">
             <div class="container">
-                <video pause muted loop>
+                <video autoplay muted loop>
                     <source src="/videos/Emancipation —.mp4" type="video/mp4">
                 </video>
                 <div class="text">
@@ -80,7 +80,7 @@
     <div class="slideshow-container ">
         <div class="mySlides">
             <div class="container">
-                <video pause muted loop>
+                <video autoplay muted loop>
                     <source src="/videos/Echo 3 — Official.mp4" type="video/mp4">
                 </video>
                 <div class="text">
@@ -93,7 +93,7 @@
     <div class="slideshow-container">
         <div class="mySlides">
             <div class="container">
-                <video pause muted loop>
+                <video autoplay muted loop>
                     <source src="/videos/Slow Horses — Official Trailer _ Apple TV.mp4" type="video/mp4">
                 </video>
                 <div class="text">
@@ -106,7 +106,7 @@
     <div class="slideshow-container">
         <div class="mySlides">
             <div class="container">
-                <video pause muted loop>
+                <video autoplay muted loop>
                     <source src="videos/Invasion — Official Trailer _ Apple TV.mp4" type="video/mp4">
                 </video>
                 <div class="text">
@@ -119,7 +119,7 @@
     <div class="slideshow-container">
         <div class="mySlides">
             <div class="container">
-                <video pause muted loop>
+                <video autoplay muted loop>
                     <source src="videos/Mythic Quest — Season 3 Official Trailer _ Apple TV.mp4" type="video/mp4">
                 </video>
                 <div class="text">
@@ -131,13 +131,10 @@
     </div>
 
     <!-- Next and previous buttons -->
-    <div>
-        <a class="next" onclick="next()">&#10095</a>
-        <a class="prev" onclick="prev()">&#10094</a>
-        
-    </div> 
 
-
+        <a class="next">&#10095</a>
+        <a class="prev">&#10094</a>      
+    
     <!-- columns -->
     <div class="container">
         <h2>Watch Premieres for Free</h2>
@@ -170,7 +167,7 @@
         <h2>Latest Originals</h2>
         <div class="column">
             <div><img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" alt=""></div>
-            <div> <img src="https://is5-ssl.mzstatic.com/image/thumb/BG3rKYXaPe9KkpZOZUjj_w/1478x832.webp" alt=""></div>
+            <div> <img src="https://is3-ssl.mzstatic.com/image/thumb/CXnyehPcDHEauavhg0D79Q/670x377.webp" alt=""></div>
             <div><img src="https://is3-ssl.mzstatic.com/image/thumb/xEt4MZZlgE0IeQMnUSG65Q/1478x832.webp" alt=""></div>
             <div> <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt=""></div>
         </div>
@@ -202,20 +199,22 @@
     let slides = document.querySelectorAll('.slideshow-container');
     let index = 0;
 
-    function next() {
+    let next=document.querySelector('.next');
+    let prev=document.querySelector('.prev');
+    next.addEventListener('click' ,()=>{
         slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
         slides[index].classList.add('active');
         console.log(index)
-    }
-    function prev() {
-
+    })
+    prev.addEventListener('click', ()=>{
         slides[index].classList.remove('active');
         index = (index - 1 + slides.length) % slides.length;
         slides[index].classList.add('active');
         console.log(index)
-    }
+    })
 
+   
     let btn = document.querySelector('.signBtn');
     let signIn = document.querySelector('.signIn')
     btn.addEventListener("click", () => {
